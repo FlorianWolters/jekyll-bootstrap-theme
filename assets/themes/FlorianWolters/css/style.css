@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/**
+ * style.css
+ *
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program. If not, see http://gnu.org/licenses/lgpl.txt.
+ *
+ * @project      Weblog and Open Source Projects of Florian Wolters
+ * @version      GIT: $Id$
+ * @package      xhtml-css
+ * @author       Florian Wolters <florian.wolters.85@googlemail.com>
+ * @copyright    2012 Florian Wolters
+ * @cssdoc       version 1.0-pre
+ * @license      http://gnu.org/licenses/lgpl.txt GNU Lesser General Public License
+ * @date         2012-03-30
+ * @lastmodified 2012-04-04
+ * @link         http://github.com/FlorianWolters/florianwolters.github.com
+ * @media        all
+ * @valid        true
+ */
+
+/* Global classes */
+
+/* Site header */
+
+body > header {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+body > header a, body > header a:visited {
+    color: black;
+    background-color: inherit;
+    text-decoration: none;
+}
+
+body > header a:hover {
+    text-decoration: none;
+}
+
+h1 > small {
+    margin-left: 1em;
+    font-size: 60%;
+    vertical-align: middle;
+    background-color: inherit;
+    color: grey;
+}
+
+/* Site main content */
+
+[role="main"] {
+    margin: .5em 0 .5em 0;
+    border: .2em solid black;
+    border-radius: 6px;
+    padding: .25em;
+}
+
+[role="main"] a:hover {
+    text-decoration: underline;
+}
+
+/* Site navigation */
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul a, nav ul a:visited {
+    color: #CCCCCC;
+    background-color: inherit;
+}
+
+nav ul a:hover {
+    color: black;
+    background-color: inherit;
+}
+
+/* Site footer */
+
+body > footer {
+    overflow: hidden;
+    margin-top: 2em;
+    border-top: 0.2em solid #CCCCCC;
+    font-size: 90%;
+    color: #CCCCCC;
+    background-color: inherit;
+}
+
+body > footer > div {
+    float: left;
+    width: 31%
+}
+
+body > footer > div.data {
+    width: 38%
+}
+
+/* List of posts */
+
+ul.posts {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.posts span {
+    font-family: Consolas, Monaco, "Lucida Console", monospace;
+    font-size: 90%;
+    color: #CCCCCC;
+    background-color: inherit;
+}
+
+/* Weblog article */
+
+article header p {
+    font-weight: bold;
+}
+
+article div.content {
+    border-top: 0.2em solid #CCCCCC;
+    border-bottom: 0.2em solid #CCCCCC;
+}
+
+article footer .license {
+    font-size: 80%;
+    text-align: center;
+}
+
+article footer .fb-social {
+    background-color: inherit;
+    color: gray;
+    font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+    font-size: 11px;
+    text-align: center;
+}
+
+article footer .fb-comments {
+    margin: 0 auto;
+    border: 1px solid #CCCCCC;
+}

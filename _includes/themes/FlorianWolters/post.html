@@ -1,0 +1,61 @@
+<article id="content">
+    <header>
+        <h1>{{ page.title }} <small>{{ page.tagline }}</small></h1>
+        <h4>Published: <time pubdate="pubdate">{{ page.date | date_to_long_string }}</time></h4>
+    </header>
+    <div class="content">
+        {{ content }}
+    </div>
+    <footer>
+        <p class="license">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0">
+                <img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
+            </a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+        </p>
+        <hr />
+        <div class="pagination">
+            <ul>
+                {% if page.previous %}
+                <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+                {% else %}
+                <li class="prev disabled"><a>&larr; Previous</a></li>
+                {% endif %}
+                <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+                {% if page.next %}
+                <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+                {% else %}
+                <li class="next disabled"><a>Next &rarr;</a>
+                {% endif %}
+            </ul>
+        </div>
+        <hr />
+        {% unless site.posts == empty %}
+        <aside id="related">
+            <h4>Related Posts</h4>
+            <ul class="posts">
+                {% for post in site.related_posts limit:3 %}
+                <li>
+                    <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </aside>
+        {% endunless %}
+        <hr />
+        {% unless page.tags == empty %}
+        <aside id="tags">
+            <h4>Tags</h4>
+            <ul class="tag_box">
+                {% assign tags_list = page.tags %}
+                {% include JB/tags_list %}
+            </ul>
+        </aside>
+        {% endunless %}
+        <hr />
+        <div class="fb-social">
+            <div class="fb-like" data-send="true" data-width="{{ site.JB.comments.facebook.width }}" data-show-faces="false" data-font="arial"></div>
+            {% include JB/comments %}
+            <div class="fb-comments-count"><fb:comments-count href={{ site.production_url }}></fb:comments-count> comments</div>
+        </div>
+    </footer>
+</article>

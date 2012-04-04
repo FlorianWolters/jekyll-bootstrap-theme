@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/**
+ * tag_box.css
+ *
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program. If not, see http://gnu.org/licenses/lgpl.txt.
+ *
+ * @project      Weblog and Open Source Projects of Florian Wolters
+ * @version      GIT: $Id$
+ * @package      xhtml-css
+ * @author       Florian Wolters <florian.wolters.85@googlemail.com>
+ * @copyright    2012 Florian Wolters
+ * @cssdoc       version 1.0-pre
+ * @license      http://gnu.org/licenses/lgpl.txt GNU Lesser General Public License
+ * @date         2012-04-04
+ * @lastmodified 2012-04-04
+ * @link         http://github.com/FlorianWolters/florianwolters.github.com
+ * @media        all
+ * @valid        true
+ */
+
+.tag_box {
+    overflow: hidden;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tag_box li {
+    float: left;
+}
+
+.tag_box a {
+    padding: 3px 6px;
+    margin: 2px;
+    background-color: #eee;
+    color:#005F6B;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.tag_box a span {
+    vertical-align: super;
+    font-size: 0.8em;
+}
+
+.tag_box a.active {
+    background-color: #57A957;
+    border: 1px solid #4C964D;
+    color: #FFF;
+}
