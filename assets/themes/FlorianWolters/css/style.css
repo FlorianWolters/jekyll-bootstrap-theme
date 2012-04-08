@@ -112,6 +112,10 @@ body > footer > div.data {
     width: 38%
 }
 
+body > footer .data small {
+    margin-left: 1.7em;
+}
+
 /* List of posts */
 
 ul.posts {
@@ -153,4 +157,54 @@ article footer .fb-social {
 article footer .fb-comments {
     margin: 0 auto;
     border: 1px solid #CCCCCC;
+}
+
+/* About page */
+
+.networks  ul {
+    text-align: center;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.networks  li {
+    display: inline-block;
+    width: 48px;
+}
+
+.pear {
+    text-align: center;
+}
+
+.pear img {
+    width: 428px;
+    height: 214px;
+    border: .1em solid black;
+    border-radius: 3px;
+}
+
+/* Google Search form */
+#google-search label:after {
+    content: ":";
+}
+
+#google-search input[type=text] {
+    width: 11.4em;
+    border: 0.1em solid black;
+    border-radius: 4px;
+    background-color: #CCCCCC;
+    color: black;
+}
+
+#google-search input[type=text]:focus {
+    border: 0.1em solid #CCCCCC;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+}
+
+#google-search input[type=image] {
+    width: 32px;
+    height: 32px;
+    margin-bottom: -11px;
 }
