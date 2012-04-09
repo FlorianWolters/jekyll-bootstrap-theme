@@ -121,7 +121,7 @@
                         <input type="image" src="{{ ASSET_PATH }}/img/google.png" alt="Google" title="Google Search" />
                     </form>
                 </p>
-            {% site.author.feedburner %}
+            {% if site.author.feedburner %}
                 <p>
                     <a href="http://feeds.feedburner.com/{{ site.author.feedburner }}">
                         <img src="{{ ASSET_PATH }}/img/rss.png" alt="RSS Feed" title="RSS Feed" />
