@@ -3,28 +3,28 @@
     <head>
         <meta charset="{{ site.charset }}" />
         <title>{{ site.title }} - {{ page.title }}</title>
-
         <meta name="author" content="{{ site.author.name }}" />
-        {% if page.description %}
+    {% if page.description %}
         <meta name="description" content="{{ page.description }}" />
-        {% elsif site.description %}
+    {% elsif site.description %}
         <meta name="description" content="{{ site.description }}" />
         {% endif %}
+    {% if site.keywords %}
         <meta name="keywords" content="{{ site.keywords }}" />
+    {% endif %}
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-
         <!-- http://developers.facebook.com/docs/reference/plugins/comments/ -->
+{% if site.JB.comments.provider == "facebook" %}
+    {% if site.JB.comments.facebook.userid %}
         <meta property="fb:admins" content="{{ site.JB.comments.facebook.userid }}" />
+    {% endif %}
+    {% if site.JB.comments.facebook.appid %}
         <meta property="fb:app_id" content="{{ site.JB.comments.facebook.appid }}" />
-
+    {% endif %}
+{% endif %}
         <!-- Import Cascading StyleSheets (CSS). -->
 
-        <link rel="stylesheet" href="{{ ASSET_PATH }}/css/lib/normalize.min.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="{{ ASSET_PATH }}/css/lib/markdown.min.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="{{ ASSET_PATH }}/css/markdown.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="{{ ASSET_PATH }}/css/pagination.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="{{ ASSET_PATH }}/css/tag_box.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="{{ ASSET_PATH }}/css/style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="{{ ASSET_PATH }}/css/style.css" type="text/css" />
 
         <!-- Include favorite icon (favicon) and apple touch icons. -->
         <!-- NOTICE: Place the image files in the /img directory, not in the /assets/themes/<THEME>/img directory! -->
@@ -46,7 +46,6 @@
         <script>
             window.jQuery || document.write(unescape('%3Cscript src="{{ ASSET_PATH }}/js/lib/jquery-1.7.2.min.js" charset="{{ page.charset }}"%3E3C/script%3E'));
         </script>
-
     </head>
     <body>
         <a href="http://github.com/{{ site.author.github }}">
@@ -95,22 +94,22 @@
                     &copy; <a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a> <small>{{ site.year }}</small><br />
                     {{ site.tagline }}<br />
                     <small>
-                        {% if site.show_humanstxt == true %}
+                    {% if site.show_humanstxt == true %}
                         <a href="{{ BASE_PATH }}/humans.txt">humans.txt</a><br />
-                        {% endif %}
-                        {% if site.show_statistics == true %}
+                    {% endif %}
+                    {% if site.show_statistics == true %}
                         <a href="{{ BASE_PATH }}/statistics.html">Statistics</a>
-                        {% endif %}
+                    {% endif %}
                     </small>
                 </p>
             </div>
             <div class="contact">
                 <p>
-                    {% if site.author.xing %}
+                {% if site.author.xing %}
                     <a href="http://xing.com/profile/{{ site.author.xing }}">
                         <img src="http://www.xing.com/img/buttons/10_en_btn.gif" alt="XING" />
                     </a>
-                    {% endif %}
+                {% endif %}
                 </p>
             </div>
             <div class="data">
@@ -118,16 +117,18 @@
                     <form id="google-search" action="http://google.com/search">
                         <input type="hidden" name="sitesearch" value="florianwolters.github.com" />
                         <label for="q">Search</label>
-                        <input id="q" type="text" name="q" title="Enter search query." />    
-                        <input type="image" src="{{ ASSET_PATH }}/img/google.png" alt="Google" title="Google Search" />                
+                        <input id="q" type="text" name="q" title="Enter search query." />
+                        <input type="image" src="{{ ASSET_PATH }}/img/google.png" alt="Google" title="Google Search" />
                     </form>
                 </p>
+            {% site.author.feedburner %}
                 <p>
                     <a href="http://feeds.feedburner.com/{{ site.author.feedburner }}">
                         <img src="{{ ASSET_PATH }}/img/rss.png" alt="RSS Feed" title="RSS Feed" />
                     </a>
                     <small>Updated: {{ site.time | date_to_long_string }}</small>
                 </p>
+            {% endif %}
                 <p>
                     <a href="http://validator.w3.org/check?uri={{ site.production_url }}">
                         <img style="width:88px; height:31px;" src="{{ ASSET_PATH }}/img/valid-html5.png" alt="Valid HTML5" title="Valid HTML5" />

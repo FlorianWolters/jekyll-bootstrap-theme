@@ -15,27 +15,29 @@
         <hr />
         <div class="pagination">
             <ul>
-                {% if page.previous %}
-                    <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
-                {% else %}
-                    <li class="prev disabled"><a>&larr; Previous</a></li>
-                {% endif %}
-                    <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
-                {% if page.next %}
-                    <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
-                {% else %}
-                    <li class="next disabled"><a>Next &rarr;</a>
-                {% endif %}
+            {% if page.previous %}
+                <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+            {% else %}
+                <li class="prev disabled"><a>&larr; Previous</a></li>
+            {% endif %}
+                <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+            {% if page.next %}
+                <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+            {% else %}
+                <li class="next disabled"><a>Next &rarr;</a>
+            {% endif %}
             </ul>
         </div>
         <hr />
+    {% if site.JB.comments.provider == "facebook" %}
         <div class="fb-social">
             <div class="fb-like" data-send="true" data-width="{{ site.JB.comments.facebook.width }}" data-show-faces="false" data-font="arial"></div>
             {% include JB/comments %}
             <div class="fb-comments-count"><fb:comments-count href={{ site.production_url }}></fb:comments-count> comments</div>
         </div>
         <hr />
-        {% unless site.posts == empty %}
+    {% endif %}
+    {% unless site.posts == empty %}
         <aside id="related">
             <h4>Related Posts</h4>
             <ul class="posts">
@@ -46,9 +48,9 @@
                 {% endfor %}
             </ul>
         </aside>
-        {% endunless %}
+    {% endunless %}
         <hr />
-        {% unless page.categories == empty %}
+    {% unless page.categories == empty %}
         <aside id="categories">
             <h4>Categories</h4>
             <ul class="tag_box">
@@ -56,9 +58,9 @@
                 {% include JB/categories_list %}
             </ul>
         </aside>
-        {% endunless %}
+    {% endunless %}
         <hr />
-        {% unless page.tags == empty %}
+    {% unless page.tags == empty %}
         <aside id="tags">
             <h4>Tags</h4>
             <ul class="tag_box">
@@ -66,6 +68,6 @@
                 {% include JB/tags_list %}
             </ul>
         </aside>
-        {% endunless %}
+    {% endunless %}
     </footer>
 </article>
