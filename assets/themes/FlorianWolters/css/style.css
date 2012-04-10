@@ -107,15 +107,12 @@ body > footer {
 
 body > footer > div {
     float: left;
-    width: 31%
+    width: 23%
 }
 
-body > footer > div.data {
-    width: 38%
-}
-
-body > footer .data small {
-    margin-left: 1.7em;
+body > footer > div.links {
+    text-align: right;
+    width: 54%;
 }
 
 /* List of posts */
@@ -191,7 +188,7 @@ article footer .fb-comments {
 }
 
 #google-search input[type=text] {
-    width: 11.4em;
+    width: 12.3em;
     border: 0.1em solid black;
     border-radius: 4px;
     background-color: #CCCCCC;
