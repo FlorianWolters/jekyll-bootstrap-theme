@@ -1,12 +1,10 @@
-[Jekyll-Bootstrap](http://jekyllbootstrap.com) weblog theme of [Florian Wolters](http://florianwolters.github.com)
-==================================================================================================================
+# [Jekyll-Bootstrap](http://jekyllbootstrap.com) weblog theme of [Florian Wolters](http://florianwolters.github.com)
 
 This is a weblog theme compatible with [Jekyll-Bootstrap](http://jekyllbootstrap.com).
 
 The theme is focused on simplicity and usage of [Markdown](http://daringfireball.net/projects/markdown) syntax. In addition it allows the configuration of a lot of meta-information about the author and the website.
 
-Features
---------
+## Features
 
 * Compatible with mobile devices (only tested with a Motorola Defy+)
 * Customizable website information (title, description, keywords, etc.)
@@ -20,28 +18,25 @@ Features
 * Valid HTML5
 * Valid CSS3 (own CSS files)
 
-Usage
------
+## Usage
 
 See [Jekyll-Bootstrap: Using Themes](http://jekyllbootstrap.com/usage/jekyll-theming.html) for usage and [Jekyll-Bootstrap: Theme API](http://jekyllbootstrap.com/api/theme-api.html) for development.
 
-Required Software
------------------
+## Required Software
 
 * [Jekyll-Bootstrap](http://jekyllbootstrap.com)
 
-Used Software
--------------
+## Used Software
 
 * [HTML 5 Boilerplate](http://html5boilerplate.com)
 * [jQuery](http://jquery.com)
+* [fancyBox](http://fancyapps.com/fancybox)
 * [Markdown CSS](http://github.com/clownfart/Markdown-CSS)
 * [Modernizr](http://modernizr.com)
 * [normalize.css](http://necolas.github.com/normalize.css)
 * [Vector Social Media Icons](http://icondock.com/free/vector-social-media-icons)
 
-License
--------
+## License
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
