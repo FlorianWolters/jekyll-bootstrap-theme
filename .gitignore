@@ -1,0 +1,21 @@
+# Microsoft Windows operating
+
+# Image file cache
+Thumbs.db
+# Folder config file
+Desktop.ini
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Apple OS X
+
+# Finder
+.DS_Store
+# Thumbnail
+._*
+# Files used on external disks
+.Spotlight-V100
+.Trashes
+
+# KDE
+.directory
