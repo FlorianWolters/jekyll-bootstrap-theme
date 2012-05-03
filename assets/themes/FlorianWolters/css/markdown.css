@@ -76,23 +76,29 @@ p, blockquote, ul, ol, dl, li, table, pre {
     margin: 15px 0;
 }
 
-code, tt {
-    background-color: #F8F8F8;
-    border: 1px solid #EAEAEA;
+code, pre {
     border-radius: 3px;
+    background-color: #F8F8F8;
+    color: inherit;
+}
+
+code {
+    border: 1px solid #EAEAEA;
     margin: 0 2px;
     padding: 0 5px;
-    white-space: nowrap;
 }
 
 pre {
-    background-color: #F8F8F8;
     border: 1px solid #CCCCCC;
-    border-radius: 3px;
-    font-size: 13px;
-    line-height: 19px;
+    line-height: 1.25em;
     overflow: auto;
     padding: 6px 10px;
+}
+
+pre > code {
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 a, a:visited {

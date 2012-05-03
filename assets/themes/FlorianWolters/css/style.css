@@ -28,8 +28,6 @@
  * @valid        true
  */
 
-@import "lib/normalize.min.css";
-@import "lib/markdown.min.css";
 @import "markdown.css";
 @import "pagination.css";
 @import "tag_box.css";
@@ -156,6 +154,13 @@ article footer .fb-social {
 article footer .fb-comments {
     margin: 0 auto;
     border: 1px solid #CCCCCC;
+}
+
+/* Images */
+
+.image {
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* About page */
