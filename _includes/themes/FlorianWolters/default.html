@@ -119,7 +119,7 @@
                 {% endif %}
                 </p>
                 <form id="google-search" action="http://google.com/search">
-                    <input type="hidden" name="sitesearch" value="florianwolters.github.com" />
+                    <input type="hidden" name="sitesearch" value="{{ site.production_url }}" />
                     <label for="q">Search</label>
                     <input id="q" type="text" name="q" title="Enter search query." />
                     <input type="image" src="{{ ASSET_PATH }}/img/google.png" alt="Google" title="Google Search" />
