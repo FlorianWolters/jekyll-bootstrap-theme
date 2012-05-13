@@ -31,9 +31,9 @@
         <hr />
     {% if site.JB.comments.provider == "facebook" %}
         <div class="fb-social">
-            <div class="fb-like" data-send="true" data-width="{{ site.JB.comments.facebook.width }}" data-show-faces="false" data-font="arial"></div>
+            {% include themes/FlorianWolters/fb-like %}
             {% include JB/comments %}
-            <div class="fb-comments-count"><fb:comments-count href={{ site.production_url }}></fb:comments-count> comments</div>
+            {% include themes/FlorianWolters/fb-comments-count %}
         </div>
         <hr />
     {% endif %}

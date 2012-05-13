@@ -1,0 +1,3 @@
+<div class="fb-comments-count">
+    <fb:comments-count href="{{ site.production_url }}{{ page.url }}"></fb:comments-count> comments
+</div>

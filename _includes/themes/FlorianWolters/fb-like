@@ -1,0 +1,1 @@
+<div class="fb-like" data-href="{{ site.production_url }}{{ page.url }}" data-send="{{ site.JB.like.facebook.send_button }}" data-layout="{{ site.JB.like.facebook.layout }}" data-width="{{ site.JB.like.facebook.width }}" data-show-faces="{{ site.JB.like.facebook.faces }}" data-font="{{ site.JB.like.facebook.font }}"></div>
