@@ -31,9 +31,8 @@ See [Jekyll-Bootstrap: Using Themes](http://jekyllbootstrap.com/usage/jekyll-the
 * [HTML 5 Boilerplate](http://html5boilerplate.com)
 * [jQuery](http://jquery.com)
 * [fancyBox](http://fancyapps.com/fancybox)
-* [Markdown CSS](http://github.com/clownfart/Markdown-CSS)
-* [Modernizr](http://modernizr.com)
-* [normalize.css](http://necolas.github.com/normalize.css)
+* [Markdown CSS by Simon Laroche](http://simon.lc/sites/markdown)
+* [Normalize.css](http://necolas.github.com/normalize.css)
 * [Vector Social Media Icons](http://icondock.com/free/vector-social-media-icons)
 
 ## License
@@ -42,4 +41,4 @@ This program is free software: you can redistribute it and/or modify it under th
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.
 
-You should have received a copy of the GNU Lesser General Public License along with this program. If not, see http://gnu.org/licenses/lgpl.txt.
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see <http://gnu.org/licenses/lgpl.txt>.
