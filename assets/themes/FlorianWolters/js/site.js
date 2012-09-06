@@ -1,6 +1,6 @@
 /**
- * @fileOverview This file has functions related to jQuery FancyBox.
- * @author <a href="mailto:florian.wolters.85@googlemail.com">Florian Wolters</a>
+ * @fileOverview This file contains functions related to jQuery FancyBox.
+ * @author <a href="mailto:wolters.fl@gmail.com">Florian Wolters</a>
  * @version 1.0.0
  */
 
