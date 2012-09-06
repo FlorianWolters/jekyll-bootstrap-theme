@@ -2,8 +2,8 @@ name:        FlorianWolters
 description: A simple and markdown syntax oriented webblog theme for Jekyll-Bootstrap.
 git_url:     git://github.com/FlorianWolters/jekyll-bootstrap-theme.git
 source_url:  https://github.com/FlorianWolters/jekyll-bootstrap-theme
-website:     http://florianwolters.github.com
+website:     http://blog.florianwolters.de
 author:
   name:    Florian Wolters
-  email:   florian.wolters.85@googlemail.com
-  website: http://florianwolters.github.com
+  email:   wolters.fl@gmail.com
+  website: http://blog.florianwolters.de
