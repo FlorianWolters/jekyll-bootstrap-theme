@@ -47,10 +47,8 @@ body > header a:hover {
     text-decoration: none;
 }
 
-h1 > small {
-    margin-left: 1em;
-    font-size: 60%;
-    vertical-align: middle;
+p > small {
+    font-weight: bold;
     background-color: inherit;
     color: grey;
 }
@@ -95,7 +93,7 @@ nav ul a:hover {
 body > footer {
     overflow: hidden;
     margin-top: 2em;
-    border-top: 0.2em solid #CCCCCC;
+    border-top: .2em solid #CCCCCC;
     font-size: 90%;
     color: #CCCCCC;
     background-color: inherit;
@@ -132,8 +130,8 @@ article header p {
 }
 
 article div.content {
-    border-top: 0.2em solid #CCCCCC;
-    border-bottom: 0.2em solid #CCCCCC;
+    border-top: .2em solid #CCCCCC;
+    border-bottom: .2em solid #CCCCCC;
 }
 
 article footer .license {
@@ -147,6 +145,31 @@ article footer .fb-social {
     font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
     font-size: 11px;
     text-align: center;
+}
+
+/* Tables */
+
+table {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0; 
+}
+
+th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
 }
 
 /* Images */
@@ -187,14 +210,14 @@ article footer .fb-social {
 
 #google-search input[type=text] {
     width: 12.3em;
-    border: 0.1em solid black;
+    border: .1em solid black;
     border-radius: 4px;
     background-color: #CCCCCC;
     color: black;
 }
 
 #google-search input[type=text]:focus {
-    border: 0.1em solid #CCCCCC;
+    border: .1em solid #CCCCCC;
     border-radius: 4px;
     background-color: white;
     color: black;
@@ -204,4 +227,10 @@ article footer .fb-social {
     width: 32px;
     height: 32px;
     margin-bottom: -11px;
+}
+
+/* GitHub Gists */
+
+.gist-file {
+  font-size: .8em;
 }

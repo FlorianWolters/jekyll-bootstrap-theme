@@ -1,7 +1,8 @@
 <article id="content">
     <header>
-        <h1>{% if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}{% if page.tagline %}<small>{{ page.tagline }}</small>{% endif %}</h1>
-        <h4>Published: <time pubdate="pubdate">{{ page.date | date_to_long_string }}</time></h4>
+        <h1>{% if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h1>
+        {% if page.tagline %}<p><small>{{ page.tagline }}</small></p>{% endif %}
+        <p>Published: <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_long_string }}</time></p>
     </header>
     <div class="content">
         {{ content }}
