@@ -23,14 +23,13 @@ $(document).ready(function() {
             title: {
                 type: 'inside'
             },
-            overlay: {
+            overlay: false /*{ TODO The overlay helper destroys the layout up from version 2.1.0!
                 opacity: 0.75,
                 css: {
                     'background-color': '#000'
                 }
-            },
-            buttons: {
-            },
+            }*/,
+            buttons: true,
             thumbs: {
                 width: 75,
                 height: 75
