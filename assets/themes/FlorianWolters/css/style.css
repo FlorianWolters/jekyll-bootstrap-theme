@@ -27,6 +27,7 @@
  */
 
 @import "markdown.css";
+@import "syntax.css";
 @import "pagination.css";
 @import "tag_box.css";
 
@@ -139,7 +140,14 @@ article footer .license {
     text-align: center;
 }
 
-article footer .fb-social {
+article footer .post-sharing li {
+    list-style: none;
+    display: inline-block;
+    width: 140px;
+    vertical-align: middle;
+}
+
+article footer .post-sharing, article footer .post-comments {
     background-color: inherit;
     color: gray;
     font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
@@ -151,7 +159,7 @@ article footer .fb-social {
 
 table {
     *border-collapse: collapse; /* IE7 and lower */
-    border-spacing: 0; 
+    border-spacing: 0;
 }
 
 th:first-child {

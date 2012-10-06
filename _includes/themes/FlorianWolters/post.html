@@ -30,13 +30,20 @@
             </ul>
         </div>
         <hr />
-    {% if site.JB.comments.provider == "facebook" %}
-        <div class="fb-social">
-            {% include themes/FlorianWolters/fb-like %}
+    {% unless site.JB.sharing.provider == empty %}
+        <h4>Share</h4>
+        <div class="post-sharing">
+            {% include JB/sharing %}
+        </div>
+        <hr />
+    {% endunless %}
+    {% unless site.JB.comments.provider == empty %}
+        <h4>Comments</h4>
+        <div class="post-comments">
             {% include JB/comments %}
         </div>
         <hr />
-    {% endif %}
+    {% endunless %}
     {% unless site.posts == empty %}
         <aside id="related">
             <h4>Related Posts</h4>
@@ -48,8 +55,8 @@
                 {% endfor %}
             </ul>
         </aside>
-    {% endunless %}
         <hr />
+    {% endunless %}
     {% unless page.categories == empty %}
         <aside id="categories">
             <h4>Categories</h4>
@@ -58,8 +65,8 @@
                 {% include JB/categories_list %}
             </ul>
         </aside>
-    {% endunless %}
         <hr />
+    {% endunless %}
     {% unless page.tags == empty %}
         <aside id="tags">
             <h4>Tags</h4>
