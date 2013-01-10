@@ -25,17 +25,18 @@ See [Jekyll-Bootstrap: Using Themes][8] for usage and [Jekyll-Bootstrap: Theme A
 ## Required Software
 
 * [Jekyll-Bootstrap][1] >= 0.2.13
-* [Jekyll][10] >= 0.11.2
+* [Jekyll][10] >= 0.12.0
 * [Ruby][17] >= 1.9.0
 
 ## Used Software
 
-* [HTML 5 Boilerplate](http://html5boilerplate.com)
-* [Normalize.css][15] 2.0.1
-* [Markdown CSS by Simon Laroche][14]
-* [jQuery][12] 1.8.1
-* jQuery [fancyBox][13] 2.1.0
-* jQuery [mouseWheel][13] 3.0.6
+* [Bootstrap][14] 2.2.2
+* [HTML 5 Boilerplate][18]
+* [Google Analytics][19]
+* [Google FeedBurner][20]
+* [jQuery][12] 1.8.3
+* jQuery [fancyBox][13] 2.1.3
+* jQuery [mouseWheel][15] 3.0.6
 * [Vector Social Media Icons][16]
 
 ## License
@@ -59,7 +60,10 @@ You should have received a copy of the GNU Lesser General Public License along w
 [11]: http://html5boilerplate.com
 [12]: http://jquery.com
 [13]: http://fancyapps.com/fancybox
-[14]: http://simon.lc/sites/markdown
-[15]: http://necolas.github.com/normalize.css
+[14]: http://twitter.github.com/bootstrap
+[15]: https://github.com/brandonaaron/jquery-mousewheel
 [16]: http://icondock.com/free/vector-social-media-icons
 [17]: http://ruby-lang.org
+[18]: http://html5boilerplate.com
+[19]: http://google.com/analytics
+[20]: http://feedburner.com

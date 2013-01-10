@@ -13,12 +13,12 @@
  * details.
  *
  * You should have received a copy of the GNU Lesser General Public License
- * along with this program. If not, see http://gnu.org/licenses/lgpl.txt.
+ * along with this program. If not, see <http://gnu.org/licenses/lgpl.txt>.
  *
  * @project      Weblog and Open Source Projects of Florian Wolters
  * @package      xhtml-css
  * @author       Florian Wolters <wolters.fl@gmail.com>
- * @copyright    2012 Florian Wolters
+ * @copyright    2012-2013 Florian Wolters
  * @cssdoc       version 1.0-pre
  * @license      http://gnu.org/licenses/lgpl.txt LGPL-3.0+
  * @link         http://github.com/FlorianWolters/jekyll-bootstrap-theme
@@ -26,25 +26,21 @@
  * @valid        true
  */
 
-@import "markdown.css";
-@import "syntax.css";
 @import "pagination.css";
 @import "tag_box.css";
 
 /* Site header */
 
-body > header {
+.container > header {
     font-weight: bold;
-    margin-bottom: 1em;
 }
 
-body > header a, body > header a:visited {
+.container > header > p > a {
     color: black;
     background-color: inherit;
-    text-decoration: none;
 }
 
-body > header a:hover {
+.container > header a:hover {
     text-decoration: none;
 }
 
@@ -57,9 +53,9 @@ p > small {
 /* Site main content */
 
 [role="main"] {
-    margin: .5em 0 .5em 0;
+    margin: .5em 0;
     border: .2em solid black;
-    border-radius: 6px;
+    border-radius: .4em;
     padding: .25em;
 }
 
@@ -71,7 +67,7 @@ p > small {
 
 nav ul {
     list-style-type: none;
-    padding-left: 0;
+    margin-left: 0;
 }
 
 nav ul li {
@@ -80,7 +76,7 @@ nav ul li {
 }
 
 nav ul a, nav ul a:visited {
-    color: #CCCCCC;
+    color: grey;
     background-color: inherit;
 }
 
@@ -91,23 +87,18 @@ nav ul a:hover {
 
 /* Site footer */
 
-body > footer {
+.container > footer {
     overflow: hidden;
-    margin-top: 2em;
+    margin-top: 1em;
     border-top: .2em solid #CCCCCC;
+    padding-top: 1em;
     font-size: 90%;
-    color: #CCCCCC;
+    color: grey;
     background-color: inherit;
 }
 
-body > footer > div {
-    float: left;
-    width: 23%
-}
-
-body > footer > div.links {
+.container > footer .links {
     text-align: right;
-    width: 54%;
 }
 
 /* List of posts */
@@ -209,32 +200,6 @@ th:only-child{
     height: 214px;
     border: .1em solid black;
     border-radius: 3px;
-}
-
-/* Google Search form */
-#google-search label:after {
-    content: ":";
-}
-
-#google-search input[type=text] {
-    width: 12.3em;
-    border: .1em solid black;
-    border-radius: 4px;
-    background-color: #CCCCCC;
-    color: black;
-}
-
-#google-search input[type=text]:focus {
-    border: .1em solid #CCCCCC;
-    border-radius: 4px;
-    background-color: white;
-    color: black;
-}
-
-#google-search input[type=image] {
-    width: 32px;
-    height: 32px;
-    margin-bottom: -11px;
 }
 
 /* GitHub Gists */
