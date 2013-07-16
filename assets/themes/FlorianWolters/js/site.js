@@ -13,7 +13,7 @@ $(document).ready(function() {
         width: '100%',
         height: '100%',
         autoSize: true,
-        closeBtn: false,
+        closeBtn: true,
         closeClick: false,
         openEffect: 'none',
         closeEffect: 'none',
