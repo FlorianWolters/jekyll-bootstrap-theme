@@ -180,6 +180,11 @@ th:only-child{
 
 /* About page */
 
+.photograph {
+    float: left;
+    margin-right: 64px;
+}
+
 .networks  ul {
     text-align: center;
     padding-left: 0;
