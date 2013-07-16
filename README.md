@@ -25,18 +25,18 @@ See [Jekyll-Bootstrap: Using Themes][8] for usage and [Jekyll-Bootstrap: Theme A
 ## Required Software
 
 * [Jekyll-Bootstrap][1] >= 0.2.13
-* [Jekyll][10] >= 0.12.0
+* [Jekyll][10] >= 1.0.2
 * [Ruby][17] >= 1.9.0
 
 ## Used Software
 
-* [Bootstrap][14] 2.2.2
+* [Bootstrap][14] 2.3.2
 * [HTML 5 Boilerplate][18]
 * [Google Analytics][19]
 * [Google FeedBurner][20]
-* [jQuery][12] 1.8.3
-* jQuery [fancyBox][13] 2.1.3
-* jQuery [mouseWheel][15] 3.0.6
+* [jQuery][12] 1.10.2
+* jQuery [fancyBox][13] 2.1.5
+* jQuery [mouseWheel][15] 3.1.3
 * [Vector Social Media Icons][16]
 
 ## License
