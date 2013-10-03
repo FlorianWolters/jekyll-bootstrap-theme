@@ -67,7 +67,7 @@ p > small {
 
 nav ul {
     list-style-type: none;
-    margin-left: 0;
+    padding-left: 0;
 }
 
 nav ul li {
@@ -88,7 +88,6 @@ nav ul a:hover {
 /* Site footer */
 
 .container > footer {
-    overflow: hidden;
     margin-top: 1em;
     border-top: .2em solid #CCCCCC;
     padding-top: 1em;

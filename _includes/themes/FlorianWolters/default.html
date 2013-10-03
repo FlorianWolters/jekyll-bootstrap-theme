@@ -29,9 +29,9 @@
         <link rel="stylesheet" href="{{ ASSET_PATH }}/js/jquery.fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" media="screen" />
         <link rel="stylesheet" href="{{ ASSET_PATH }}/js/jquery.fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" media="screen" />
 
-        <!-- Import Bootstrap plugin. -->
-        <link rel="stylesheet" href="{{ ASSET_PATH }}/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="{{ ASSET_PATH }}/css/bootstrap-responsive.min.css" />
+        <!-- Import Bootstrap (and its optional theme). -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
 
         <link rel="stylesheet" href="{{ ASSET_PATH }}/css/style.css" />
 
@@ -89,7 +89,7 @@
 
             <footer>
                 <div class="row">
-                    <div class="span4">
+                    <div class="col-md-4">
                         <p>
                             &copy; <a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a> <small>{{ site.year }}</small><br />
                             {{ site.tagline }}<br />
@@ -100,7 +100,7 @@
                         {% endif %}
                         </p>
                     </div>
-                    <div class="span4">
+                    <div class="col-md-4">
                         <p>
                             <small>
                                 Updated: {{ site.time | date_to_long_string }}<br />
@@ -113,7 +113,7 @@
                             </small>
                         </p>
                     </div>
-                    <div class="span4 links">
+                    <div class="col-md-4 links">
                         <p>
                             <a href="http://validator.w3.org/check?uri={{ site.production_url }}">
                                 <img style="width:88px; height:31px;" src="{{ ASSET_PATH }}/img/valid-html5.png" alt="Valid HTML5" title="Valid HTML5" />
@@ -127,11 +127,19 @@
                             </a>
                         {% endif %}
                         </p>
-                        <form class="form-inline" id="google-search" action="http://google.com/search">
-                            <input type="hidden" name="sitesearch" value="{{ site.production_url }}" />
-                            <label for="q">Search</label>
-                            <input class="input-medium search-query" id="q" type="text" name="q" title="Enter search query." />
-                            <input class="button" type="image" src="{{ ASSET_PATH }}/img/google.png" alt="Google" title="Google Search" />
+                        <form class="form-horizontal" role="form" id="google-search" action="https://google.com/search">
+                            <div class="form-group">
+                                <input type="hidden" name="sitesearch" value="{{ site.production_url }}" />
+
+                                <label for="q" class="col-lg-2 control-label">Search</label>
+                                <div class="col-lg-8">
+                                    <input class="form-control" id="q" type="search" name="q" title="Enter search query" placeholder="Enter search query" />
+                                </div>
+
+                                <button style="padding: 0" class="col-lg-2 btn btn-link" type="submit" title="Google Search">
+                                    <img src="{{ ASSET_PATH }}/img/google.png" alt="Google" />
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -142,16 +150,19 @@
 
         <!-- Import JavaScript (JS). -->
 
-        <!--
-            Import jQuery from Google Content Delivery Network (CDN).
-            Fall back to the local copy if necessary.
-        -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- Import jQuery from MaxCDN. Fall back to (an optional) the local copy if necessary. -->
+        <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
         <script>
             window.jQuery || document.write(unescape('%3Cscript src="{{ ASSET_PATH }}/js/jquery-1.10.2.min.js" %3E3C/script%3E'));
         </script>
 
-        <!-- Import jQuery MouseWheel plugin (optional). -->
+        <!-- Import Bootstrap from NetDNA CDN. Fall back to (an optional) the local copy if necessary. -->
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script>
+            window.jQuery || document.write(unescape('%3Cscript src="{{ ASSET_PATH }}/js/bootstrap.min.js" %3E3C/script%3E'));
+        </script>
+
+        <!-- Import jQuery MouseWheel plugin. -->
         <script src="{{ ASSET_PATH }}/js/lib/jquery.mousewheel.js"></script>
 
         <!-- Import jQuery FancyBox plugin. -->
@@ -159,9 +170,6 @@
         <script src="{{ ASSET_PATH }}/js/jquery.fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
         <script src="{{ ASSET_PATH }}/js/jquery.fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
         <script src="{{ ASSET_PATH }}/js/jquery.fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-
-        <!-- Import Bootstrap. -->
-        <script src="{{ ASSET_PATH }}/js/bootstrap.min.js"></script>
 
         <script src="{{ ASSET_PATH }}/js/site.js"></script>
     </body>
