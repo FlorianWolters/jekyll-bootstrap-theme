@@ -36,7 +36,7 @@ See [Jekyll-Bootstrap: Using Themes][8] for usage and [Jekyll-Bootstrap: Theme A
 * [Google FeedBurner][20]
 * [jQuery][12] 1.10.2
 * jQuery [fancyBox][13] 2.1.5
-* jQuery [mouseWheel][15] 3.1.3
+* jQuery [mouseWheel][15] 3.1.9
 * [Vector Social Media Icons][16]
 
 ## License
