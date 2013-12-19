@@ -5,7 +5,6 @@
  */
 
 $(document).ready(function() {
-
     $('.fancybox').fancybox({
         maxWidth: 1920,
         maxHeight: 1080,
@@ -23,12 +22,7 @@ $(document).ready(function() {
             title: {
                 type: 'inside'
             },
-            overlay: false /*{ TODO The overlay helper destroys the layout up from version 2.1.0!
-                opacity: 0.75,
-                css: {
-                    'background-color': '#000'
-                }
-            }*/,
+            overlay: false,
             buttons: true,
             thumbs: {
                 width: 75,
@@ -40,5 +34,4 @@ $(document).ready(function() {
     $('.fancybox img').each(function(){
         $(this).width($(this).width() * .5);
     });
-
 });
