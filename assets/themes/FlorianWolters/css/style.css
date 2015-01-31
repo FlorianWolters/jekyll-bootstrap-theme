@@ -18,10 +18,10 @@
  * @project      Weblog and Open Source Projects of Florian Wolters
  * @package      xhtml-css
  * @author       Florian Wolters <wolters.fl@gmail.com>
- * @copyright    2012-2013 Florian Wolters
+ * @copyright    2012-2015 Florian Wolters (http://blog.florianwolters.de)
  * @cssdoc       version 1.0-pre
- * @license      http://gnu.org/licenses/lgpl.txt LGPL-3.0+
- * @link         http://github.com/FlorianWolters/jekyll-bootstrap-theme
+ * @license      https://gnu.org/licenses/lgpl.txt LGPL-3.0+
+ * @link         https://github.com/FlorianWolters/jekyll-bootstrap-theme
  * @media        all
  * @valid        true
  */
@@ -169,6 +169,10 @@ th:only-child{
     -webkit-border-radius: 6px 6px 0 0;
     border-radius: 6px 6px 0 0;
 }
+
+th, td {
+    border: 2px solid black;
+]
 
 /* Images */
 
